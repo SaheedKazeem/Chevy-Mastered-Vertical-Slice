@@ -1,0 +1,1700 @@
+fileFormatVersion: 2
+guid: 16da460c5cbcf65448282ccbde5ce7a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4056121967121193756
+    second: Big Golem without shadow_0
+  - first:
+      213: -3760165381035375336
+    second: Big Golem without shadow_1
+  - first:
+      213: -3787012251333260911
+    second: Big Golem without shadow_2
+  - first:
+      213: 1490491376215603788
+    second: Big Golem without shadow_3
+  - first:
+      213: 8391812622550953529
+    second: Big Golem without shadow_4
+  - first:
+      213: -3899012354539083555
+    second: Big Golem without shadow_5
+  - first:
+      213: 7050384317324232287
+    second: Big Golem without shadow_6
+  - first:
+      213: -33466301705549561
+    second: Big Golem without shadow_7
+  - first:
+      213: 2203152770631748624
+    second: Big Golem without shadow_8
+  - first:
+      213: 8854407567128686931
+    second: Big Golem without shadow_9
+  - first:
+      213: -6345801825947885623
+    second: Big Golem without shadow_10
+  - first:
+      213: 2475122729893811848
+    second: Big Golem without shadow_11
+  - first:
+      213: -6893783908210744065
+    second: Big Golem without shadow_12
+  - first:
+      213: -2109467267784731693
+    second: Big Golem without shadow_13
+  - first:
+      213: 994681328876331898
+    second: Big Golem without shadow_14
+  - first:
+      213: -7230478903945301693
+    second: Big Golem without shadow_15
+  - first:
+      213: -1671820311372147899
+    second: Big Golem without shadow_16
+  - first:
+      213: -5579636945270470214
+    second: Big Golem without shadow_17
+  - first:
+      213: 3001221053718890599
+    second: Big Golem without shadow_18
+  - first:
+      213: -7925797784013243120
+    second: Big Golem without shadow_19
+  - first:
+      213: -4869322258872647843
+    second: Big Golem without shadow_20
+  - first:
+      213: 7503629224347008980
+    second: Big Golem without shadow_21
+  - first:
+      213: -3531307220266075471
+    second: Big Golem without shadow_22
+  - first:
+      213: -195535743598942496
+    second: Big Golem without shadow_23
+  - first:
+      213: 7126465825575771310
+    second: Big Golem without shadow_24
+  - first:
+      213: 9127668017567252013
+    second: Big Golem without shadow_25
+  - first:
+      213: -1904430580414755421
+    second: Big Golem without shadow_26
+  - first:
+      213: 1445806109231773497
+    second: Big Golem without shadow_27
+  - first:
+      213: 5228476992879924058
+    second: Big Golem without shadow_28
+  - first:
+      213: -701396242313328807
+    second: Big Golem without shadow_29
+  - first:
+      213: -3393696331754894647
+    second: Big Golem without shadow_30
+  - first:
+      213: 2662909595158975344
+    second: Big Golem without shadow_31
+  - first:
+      213: 78202991294111653
+    second: Big Golem without shadow_32
+  - first:
+      213: 3837497622908297036
+    second: Big Golem without shadow_33
+  - first:
+      213: 110146074223878472
+    second: Big Golem without shadow_34
+  - first:
+      213: 1987220951841191993
+    second: Big Golem without shadow_35
+  - first:
+      213: 3072192006780619629
+    second: Big Golem without shadow_36
+  - first:
+      213: 6912394168832678104
+    second: Big Golem without shadow_37
+  - first:
+      213: 454591181967789966
+    second: Big Golem without shadow_38
+  - first:
+      213: 7934064405638673071
+    second: Big Golem without shadow_39
+  - first:
+      213: 5681891546414851015
+    second: Big Golem without shadow_40
+  - first:
+      213: 2191093479518758978
+    second: Big Golem without shadow_41
+  - first:
+      213: 8559811489973251413
+    second: Big Golem without shadow_42
+  - first:
+      213: 3231147324863025261
+    second: Big Golem without shadow_43
+  - first:
+      213: 7672310542451022706
+    second: Big Golem without shadow_44
+  - first:
+      213: 6709284279379559693
+    second: Big Golem without shadow_45
+  - first:
+      213: 1509710079613946150
+    second: Big Golem without shadow_46
+  - first:
+      213: -2196318026760773576
+    second: Big Golem without shadow_47
+  - first:
+      213: 8283520025264719075
+    second: Big Golem without shadow_48
+  - first:
+      213: -7241007847280189309
+    second: Big Golem without shadow_49
+  - first:
+      213: 7666249104033674124
+    second: Big Golem without shadow_50
+  - first:
+      213: 6994463581543063312
+    second: Big Golem without shadow_51
+  - first:
+      213: 5027073082573899742
+    second: Big Golem without shadow_52
+  - first:
+      213: -505542169418217000
+    second: Big Golem without shadow_53
+  - first:
+      213: 6728187946481982347
+    second: Big Golem without shadow_54
+  - first:
+      213: 2159162112915358901
+    second: Big Golem without shadow_55
+  - first:
+      213: 2508786607700843151
+    second: Big Golem without shadow_56
+  - first:
+      213: 7054922349334501705
+    second: Big Golem without shadow_57
+  - first:
+      213: -3540977491517909165
+    second: Big Golem without shadow_58
+  - first:
+      213: 507462027106273320
+    second: Big Golem without shadow_59
+  - first:
+      213: 2302451394343296336
+    second: Big Golem without shadow_60
+  - first:
+      213: 5595583271823005955
+    second: Big Golem without shadow_61
+  - first:
+      213: 8926904573206998329
+    second: Big Golem without shadow_62
+  - first:
+      213: -5671984742605588101
+    second: Big Golem without shadow_63
+  - first:
+      213: 5283544189251895288
+    second: Big Golem without shadow_64
+  - first:
+      213: 5833380484642696011
+    second: Big Golem without shadow_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Golem without shadow_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 329
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e42518af82c5b7c0800000000000000
+      internalID: -4056121967121193756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 329
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8154aa6128531dbc0800000000000000
+      internalID: -3760165381035375336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 329
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1998a3ffb64d17bc0800000000000000
+      internalID: -3787012251333260911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 329
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a3d1c720a4fa410800000000000000
+      internalID: 1490491376215603788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 329
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ee9c45e15b57470800000000000000
+      internalID: 8391812622550953529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 329
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8a6d0ebece3e9c0800000000000000
+      internalID: -3899012354539083555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 265
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56881c9e2ff7d160800000000000000
+      internalID: 7050384317324232287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 265
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70905ee639a198ff0800000000000000
+      internalID: -33466301705549561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 265
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c4c67a5cb239e10800000000000000
+      internalID: 2203152770631748624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 265
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3517c3705cc21ea70800000000000000
+      internalID: 8854407567128686931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_10
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 265
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfd95d5cde2fe7a0800000000000000
+      internalID: -6345801825947885623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 265
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886d0d25207695220800000000000000
+      internalID: 2475122729893811848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_12
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 265
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff46bc07f0c5450a0800000000000000
+      internalID: -6893783908210744065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 265
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3906642baa9b2e0800000000000000
+      internalID: -2109467267784731693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_14
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 217
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7323680661ddcd00800000000000000
+      internalID: 994681328876331898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_15
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 201
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341726edebd28ab90800000000000000
+      internalID: -7230478903945301693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_16
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 201
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5435164d8408cc8e0800000000000000
+      internalID: -1671820311372147899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 201
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9028da2c52192b0800000000000000
+      internalID: -5579636945270470214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 216
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768865fa5aa76a920800000000000000
+      internalID: 3001221053718890599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 216
+        width: 95
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dff4a78e8e10290800000000000000
+      internalID: -7925797784013243120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_20
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 216
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f3efe4431bc6cb0800000000000000
+      internalID: -4869322258872647843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_21
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 218
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df717b060f322860800000000000000
+      internalID: 7503629224347008980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_22
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 216
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bab447fac64efec0800000000000000
+      internalID: -3531307220266075471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_23
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 221
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6a4e5f641594df0800000000000000
+      internalID: -195535743598942496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 137
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac976529ea46e260800000000000000
+      internalID: 7126465825575771310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 137
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e3ac693bdfbae70800000000000000
+      internalID: 9127668017567252013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 137
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adccfa2a7a1295e0800000000000000
+      internalID: -1904430580414755421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_27
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 137
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93779d20ff8801410800000000000000
+      internalID: 1445806109231773497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_28
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 137
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5319e49f184f8840800000000000000
+      internalID: 5228476992879924058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_29
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 138
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957ce1275d32446f0800000000000000
+      internalID: -701396242313328807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_30
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 152
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca0436ba2b27e0d0800000000000000
+      internalID: -3393696331754894647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_31
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 153
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0731e680b2e84f420800000000000000
+      internalID: 2662909595158975344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_32
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 138
+        width: 89
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af557cc435d51100800000000000000
+      internalID: 78202991294111653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_33
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 154
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fdadf81c7814530800000000000000
+      internalID: 3837497622908297036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_34
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 160
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841a48b5541578100800000000000000
+      internalID: 110146074223878472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_35
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 138
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93835bc4de6049b10800000000000000
+      internalID: 1987220951841191993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_36
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 159
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b04fd5a5e92aa20800000000000000
+      internalID: 3072192006780619629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_37
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 161
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8d0c48fd1cdef50800000000000000
+      internalID: 6912394168832678104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_38
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 165
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f073f75480f4600800000000000000
+      internalID: 454591181967789966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_39
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 140
+        width: 72
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2f92b5a857b1e60800000000000000
+      internalID: 7934064405638673071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_40
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 165
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c32a5ce1422ade40800000000000000
+      internalID: 5681891546414851015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 142
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248e36429e3586e10800000000000000
+      internalID: 2191093479518758978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_42
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 142
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55da924c23f8ac670800000000000000
+      internalID: 8559811489973251413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_43
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 158
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d601a636f5757dc20800000000000000
+      internalID: 3231147324863025261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_44
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 146
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b1749e9c5897a60800000000000000
+      internalID: 7672310542451022706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_45
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 143
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d050889318a2c1d50800000000000000
+      internalID: 6709284279379559693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_46
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 138
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6294731915193f410800000000000000
+      internalID: 1509710079613946150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_47
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 73
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8302329246c1581e0800000000000000
+      internalID: -2196318026760773576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_48
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 73
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e40db33399f4f270800000000000000
+      internalID: 8283520025264719075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_49
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 9
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3806c073ab5c28b90800000000000000
+      internalID: -7241007847280189309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 14
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83759d41fcf36a60800000000000000
+      internalID: 7666249104033674124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_51
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 30
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fd744b193511160800000000000000
+      internalID: 6994463581543063312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_52
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 37
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7ceb28550c3c540800000000000000
+      internalID: 5027073082573899742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_53
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 16
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9c8dc4314fbf8f0800000000000000
+      internalID: -505542169418217000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_54
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 30
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b9f143a435f5d50800000000000000
+      internalID: 6728187946481982347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_55
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 39
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b44dc08082e6fd10800000000000000
+      internalID: 2159162112915358901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_56
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 30
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a1449a02001d220800000000000000
+      internalID: 2508786607700843151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_57
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9491c068f7e18e160800000000000000
+      internalID: 7054922349334501705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_58
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 20
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357db6c7bbbebdec0800000000000000
+      internalID: -3540977491517909165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_59
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 31
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8284ba6660eda0700800000000000000
+      internalID: 507462027106273320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_60
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 13
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d5f602853f3ff10800000000000000
+      internalID: 2302451394343296336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_61
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 38
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309d02cc65187ad40800000000000000
+      internalID: 5595583271823005955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_62
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 6
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d20dd996cb2eb70800000000000000
+      internalID: 8926904573206998329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_63
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 6
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79fe859def0941b0800000000000000
+      internalID: -5671984742605588101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_64
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 10
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff307b527be25940800000000000000
+      internalID: 5283544189251895288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Golem without shadow_65
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 11
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4be2dae4a454f050800000000000000
+      internalID: 5833380484642696011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
