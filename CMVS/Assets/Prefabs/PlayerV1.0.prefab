@@ -19265,7 +19265,7 @@ GameObject:
   - component: {fileID: 8931638541987077538}
   - component: {fileID: 4162763347359629052}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerV1.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19388,13 +19388,17 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   RefToHealthBar: {fileID: 0}
+  RefToDialogueManager: {fileID: 0}
+  RefToDialogueTrigger: {fileID: 0}
   RefToPlayerAnimator: {fileID: 8931638542972942641}
+  hasDied: 0
   anim: {fileID: 8931638543184989646}
   attackPoint: {fileID: 0}
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
+  attackRate: 2
 --- !u!1 &8931638542005127921
 GameObject:
   m_ObjectHideFlags: 0
