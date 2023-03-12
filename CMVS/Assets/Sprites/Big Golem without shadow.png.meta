@@ -201,7 +201,7 @@ TextureImporter:
       213: 5833380484642696011
     second: Big Golem without shadow_65
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -221,6 +221,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -230,8 +232,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -252,10 +254,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -283,6 +289,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1692,6 +1710,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Big Golem without shadow_11: 2475122729893811848
+      Big Golem without shadow_24: 7126465825575771310
+      Big Golem without shadow_4: 8391812622550953529
+      Big Golem without shadow_14: 994681328876331898
+      Big Golem without shadow_53: -505542169418217000
+      Big Golem without shadow_1: -3760165381035375336
+      Big Golem without shadow_15: -7230478903945301693
+      Big Golem without shadow_30: -3393696331754894647
+      Big Golem without shadow_28: 5228476992879924058
+      Big Golem without shadow_10: -6345801825947885623
+      Big Golem without shadow_60: 2302451394343296336
+      Big Golem without shadow_41: 2191093479518758978
+      Big Golem without shadow_55: 2159162112915358901
+      Big Golem without shadow_45: 6709284279379559693
+      Big Golem without shadow_40: 5681891546414851015
+      Big Golem without shadow_31: 2662909595158975344
+      Big Golem without shadow_19: -7925797784013243120
+      Big Golem without shadow_57: 7054922349334501705
+      Big Golem without shadow_17: -5579636945270470214
+      Big Golem without shadow_9: 8854407567128686931
+      Big Golem without shadow_2: -3787012251333260911
+      Big Golem without shadow_3: 1490491376215603788
+      Big Golem without shadow_6: 7050384317324232287
+      Big Golem without shadow_54: 6728187946481982347
+      Big Golem without shadow_59: 507462027106273320
+      Big Golem without shadow_12: -6893783908210744065
+      Big Golem without shadow_56: 2508786607700843151
+      Big Golem without shadow_18: 3001221053718890599
+      Big Golem without shadow_35: 1987220951841191993
+      Big Golem without shadow_23: -195535743598942496
+      Big Golem without shadow_39: 7934064405638673071
+      Big Golem without shadow_49: -7241007847280189309
+      Big Golem without shadow_61: 5595583271823005955
+      Big Golem without shadow_21: 7503629224347008980
+      Big Golem without shadow_26: -1904430580414755421
+      Big Golem without shadow_37: 6912394168832678104
+      Big Golem without shadow_5: -3899012354539083555
+      Big Golem without shadow_13: -2109467267784731693
+      Big Golem without shadow_22: -3531307220266075471
+      Big Golem without shadow_32: 78202991294111653
+      Big Golem without shadow_16: -1671820311372147899
+      Big Golem without shadow_43: 3231147324863025261
+      Big Golem without shadow_51: 6994463581543063312
+      Big Golem without shadow_44: 7672310542451022706
+      Big Golem without shadow_47: -2196318026760773576
+      Big Golem without shadow_50: 7666249104033674124
+      Big Golem without shadow_7: -33466301705549561
+      Big Golem without shadow_33: 3837497622908297036
+      Big Golem without shadow_8: 2203152770631748624
+      Big Golem without shadow_58: -3540977491517909165
+      Big Golem without shadow_65: 5833380484642696011
+      Big Golem without shadow_34: 110146074223878472
+      Big Golem without shadow_62: 8926904573206998329
+      Big Golem without shadow_63: -5671984742605588101
+      Big Golem without shadow_20: -4869322258872647843
+      Big Golem without shadow_29: -701396242313328807
+      Big Golem without shadow_64: 5283544189251895288
+      Big Golem without shadow_25: 9127668017567252013
+      Big Golem without shadow_38: 454591181967789966
+      Big Golem without shadow_0: -4056121967121193756
+      Big Golem without shadow_42: 8559811489973251413
+      Big Golem without shadow_48: 8283520025264719075
+      Big Golem without shadow_36: 3072192006780619629
+      Big Golem without shadow_46: 1509710079613946150
+      Big Golem without shadow_52: 5027073082573899742
+      Big Golem without shadow_27: 1445806109231773497
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

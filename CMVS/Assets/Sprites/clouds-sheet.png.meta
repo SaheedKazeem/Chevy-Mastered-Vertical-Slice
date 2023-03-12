@@ -192,7 +192,7 @@ TextureImporter:
       213: 6773608627997777918
     second: clouds-sheet_62
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -212,6 +212,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -221,8 +223,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -243,10 +245,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -274,6 +280,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1620,6 +1638,70 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      clouds-sheet_28: 7483915477675580225
+      clouds-sheet_52: 2523149335882972058
+      clouds-sheet_58: -2922318854824158824
+      clouds-sheet_31: -203498290053659003
+      clouds-sheet_32: -4592701946091900019
+      clouds-sheet_14: 568135318173693718
+      clouds-sheet_29: -8203729482298873765
+      clouds-sheet_16: -8510852601535737819
+      clouds-sheet_44: 4507483494203048834
+      clouds-sheet_4: -6821565814724364016
+      clouds-sheet_5: -2043783677769061483
+      clouds-sheet_61: 4817116841828719087
+      clouds-sheet_33: 8385340442204145381
+      clouds-sheet_49: 3819523275859909865
+      clouds-sheet_60: -8410086084693856103
+      clouds-sheet_11: 7146160456363418327
+      clouds-sheet_48: -3451487733156118295
+      clouds-sheet_51: -8376271192321966320
+      clouds-sheet_54: -1850346223569616158
+      clouds-sheet_43: -5015213071336533025
+      clouds-sheet_27: 3714293948692677094
+      clouds-sheet_39: -6225065627157123149
+      clouds-sheet_62: 6773608627997777918
+      clouds-sheet_3: -8836107110903563079
+      clouds-sheet_18: -3459449936783733787
+      clouds-sheet_59: -6654689585209185231
+      clouds-sheet_30: 1241807274038127700
+      clouds-sheet_6: -6967169973350085304
+      clouds-sheet_20: -5652096415305927675
+      clouds-sheet_37: -5029150158393620999
+      clouds-sheet_57: -3257016154898056031
+      clouds-sheet_17: -487993072060491176
+      clouds-sheet_19: -821171626953929685
+      clouds-sheet_21: -4525923939167813441
+      clouds-sheet_40: 3432472791331723910
+      clouds-sheet_0: 6096836084406373319
+      clouds-sheet_36: -5269200317356852517
+      clouds-sheet_38: -346410013928709992
+      clouds-sheet_12: -2770864851853654352
+      clouds-sheet_1: 3183612101826532767
+      clouds-sheet_2: 128338876384373357
+      clouds-sheet_34: 875198388471216856
+      clouds-sheet_47: 6276681356363411485
+      clouds-sheet_56: -6537456458282010575
+      clouds-sheet_45: -1311278276626988192
+      clouds-sheet_25: -5560586857471860716
+      clouds-sheet_8: 404035876630720569
+      clouds-sheet_9: 1843408320663177607
+      clouds-sheet_41: -6186831967333559935
+      clouds-sheet_53: -5138007299040260621
+      clouds-sheet_55: -3607203085441886582
+      clouds-sheet_26: -5695280267925522708
+      clouds-sheet_35: -1309626942565350447
+      clouds-sheet_50: 9069259371169151592
+      clouds-sheet_46: 1995048157233658077
+      clouds-sheet_10: -6834849136989369865
+      clouds-sheet_24: 1658815168206246195
+      clouds-sheet_13: 8782497422968292839
+      clouds-sheet_7: 8565992972671386260
+      clouds-sheet_42: 2457233356064533191
+      clouds-sheet_22: -7897553948970274567
+      clouds-sheet_23: 7131095120960068641
+      clouds-sheet_15: -2408493546572075125
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

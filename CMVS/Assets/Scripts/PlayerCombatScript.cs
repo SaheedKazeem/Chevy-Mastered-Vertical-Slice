@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MasterController;
+//using MasterController;
 
 public class PlayerCombatScript : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class PlayerCombatScript : MonoBehaviour
     public HealthBarScript RefToHealthBar;
     public DialogueManagerScript RefToDialogueManager;
     public DialogueTrigger RefToDialogueTrigger;
-    public PlayerAnimator RefToPlayerAnimator;
+    //public PlayerAnimator RefToPlayerAnimator;
     CapsuleCollider2D RefToKnockbackCollider;
     Knockback RefToKnockback;
     public bool hasDied;
@@ -79,7 +79,7 @@ public class PlayerCombatScript : MonoBehaviour
     {
         currentHealth -= Damage;
         RefToHealthBar.SetHealth(currentHealth);
-        RefToPlayerAnimator.HasBeenDamaged();
+       // RefToPlayerAnimator.HasBeenDamaged();
 
     }
     public void onDeath()
