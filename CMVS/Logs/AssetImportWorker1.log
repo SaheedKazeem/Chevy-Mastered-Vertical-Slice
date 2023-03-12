@@ -301,3 +301,7 @@ Received Import Request.
   path: Assets/Prefabs/PauseMenu.prefab
   artifactKey: Guid(5d473e39d79114d42996b465a5de7fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/PauseMenu.prefab using Guid(5d473e39d79114d42996b465a5de7fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f43724c091d40478a87b79ee5614110') in 0.020286 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
