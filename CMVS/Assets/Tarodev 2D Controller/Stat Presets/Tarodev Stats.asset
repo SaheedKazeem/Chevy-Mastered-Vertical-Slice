@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1152
   ClimbableLayer:
     serializedVersion: 2
     m_Bits: 256
   LadderLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   SnapInput: 1
   VerticalDeadzoneThreshold: 0.3
   HorizontalDeadzoneThreshold: 0.1
@@ -51,7 +51,7 @@ MonoBehaviour:
   WallJumpInputLossFrames: 18
   WallJumpCoyoteFrames: 5
   WallDetectorSize: {x: 0.75, y: 1.25}
-  AllowLadders: 1
+  AllowLadders: 0
   AutoAttachToLadders: 1
   SnapToLadders: 1
   LadderSnapTime: 0.05
