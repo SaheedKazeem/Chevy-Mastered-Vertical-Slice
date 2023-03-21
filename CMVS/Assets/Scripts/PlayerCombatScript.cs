@@ -1,4 +1,5 @@
-﻿using UnityEngine.SceneManagement;
+﻿using System;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,14 @@ using UnityEngine;
 
 public class PlayerCombatScript : MonoBehaviour
 {
+    private TarodevController.IPlayerController _player;
     public int maxHealth = 100, currentHealth;
     public HealthBarScript RefToHealthBar;
     public DialogueManagerScript RefToDialogueManager;
     public DialogueTrigger RefToDialogueTrigger;
     //public PlayerAnimator RefToPlayerAnimator;
     CapsuleCollider2D RefToKnockbackCollider;
+    public GameObject LoseScreen;
     Knockback RefToKnockback;
     public bool hasDied;
     public Animator anim;
@@ -20,11 +23,12 @@ public class PlayerCombatScript : MonoBehaviour
     public LayerMask enemyLayers;
     public float attackRate = 2f;
     float nextAttackTime;
+    
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-
+        
         RefToHealthBar.SetMaxHealth(maxHealth);
         RefToKnockbackCollider = attackPoint.GetComponent<CapsuleCollider2D>();
         RefToKnockback = attackPoint.GetComponent<Knockback>();
@@ -33,7 +37,7 @@ public class PlayerCombatScript : MonoBehaviour
             RefToKnockback.enabled = false;
             RefToKnockbackCollider.enabled = false;
         }
-
+        
 
 
     }
@@ -42,27 +46,22 @@ public class PlayerCombatScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time >= nextAttackTime)
-        {
-
-            if (Input.GetButtonDown("BKick"))
-            {
-                BabyKick();
-                nextAttackTime = Time.time + 1f / attackRate;
-            }
-
-        }
+        
         if (currentHealth <= 0)
         {
             onDeath();
         }
+        if (transform.position.y <= -10.5f)
+        {
+            transform.position = new Vector2(transform.position.x, 56f);
+            TakeDamage(10);
+        }
 
 
     }
-    void BabyKick()
+    public void BabyKick()
     {
-        //Play Attack Animation
-        anim.SetTrigger("isBabyKicking");
+       
         // Detect enemies in range of attack
         RefToKnockbackCollider.enabled = true;
         RefToKnockback.enabled = true;
@@ -84,9 +83,9 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void onDeath()
     {
-        if (gameObject != null)
+        /* if (gameObject != null)
         {
-            if (RefToDialogueManager.HasSentenceEnded == true)
+             if (RefToDialogueManager.HasSentenceEnded == true)
             {
                 RefToDialogueTrigger.TriggerDialogue();
                 RefToDialogueManager.HasSentenceEnded = false;
@@ -97,7 +96,13 @@ public class PlayerCombatScript : MonoBehaviour
 
             }
         }
-
+        */
+        anim.SetTrigger("hasDied");
+        
+        StartCoroutine(LoseScreenCo());
+        StartCoroutine(RestartScene());
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        
 
 
 
@@ -124,8 +129,15 @@ public class PlayerCombatScript : MonoBehaviour
     IEnumerator RestartScene()
     {
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3.15f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+     IEnumerator LoseScreenCo()
+    {
+
+        yield return new WaitForSeconds(1.5f);
+        LoseScreen.SetActive(true);
 
     }
 

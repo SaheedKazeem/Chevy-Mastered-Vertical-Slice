@@ -1,4 +1,5 @@
 // ReSharper disable ClassWithVirtualMembersNeverInherited.Global
+using UnityEngine.Events;
 
 using System;
 using System.Collections;
@@ -522,6 +523,7 @@ namespace TarodevController {
             if (_fixedFrame > _frameLastAttacked + _stats.AttackFrameCooldown) {
                 _frameLastAttacked = _fixedFrame;
                 Attacked?.Invoke();
+                GetComponent<PlayerCombatScript>().BabyKick();
             }
 
             _attackToConsume = false;
