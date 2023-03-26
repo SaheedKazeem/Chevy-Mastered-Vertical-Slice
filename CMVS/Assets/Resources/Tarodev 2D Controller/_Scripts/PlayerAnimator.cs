@@ -235,8 +235,8 @@ namespace TarodevController
 
             _jumpParticlesParent.localRotation = Quaternion.Euler(0, 0, _player.WallDirection * 60f);
 
-            SetColor(_jumpParticles);
-            SetColor(_launchParticles);
+            //SetColor(_jumpParticles);
+           // SetColor(_launchParticles);
             _jumpParticles.Play();
         }
 
@@ -258,7 +258,7 @@ namespace TarodevController
                 _landed = true;
                 _landParticles.transform.localScale = p * Vector3.one;
                 _landParticles.Play();
-                SetColor(_landParticles);
+                //SetColor(_landParticles);
                 PlaySound(_landClip, p * 0.1f);
             }
 
