@@ -97,11 +97,11 @@ public class PlayerCombatScript : MonoBehaviour
             }
         }
         */
-        anim.SetTrigger("hasDied");
-        
-        StartCoroutine(LoseScreenCo());
-        StartCoroutine(RestartScene());
+        anim.Play("Death forward");
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        StartCoroutine(LoseScreenCo());
+       
+        
         
 
 
