@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlimeMobScript : MonoBehaviour
 {
-    private float knockbackForce = 180f;
+    public float knockbackForce = 100f;
     public int maxHealth = 100;
     int currentHealth;
     public float speed;
@@ -13,6 +13,10 @@ public class SlimeMobScript : MonoBehaviour
     public float minimumDistance;
     public PlayerCombatScript RefToPlayerCombatScript;
     public Animator RefToAnim;
+
+    // New variable to track if the slime has already damaged the player in the current collision
+    private bool hasDamagedPlayer = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,30 +25,35 @@ public class SlimeMobScript : MonoBehaviour
     }
 
    private void OnCollisionStay2D(Collision2D other)
-{
-    if (other.gameObject.CompareTag("Player"))
-    {
-        // Release the object from freeze constraints
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+   {
+       if (other.gameObject.CompareTag("Player") && !hasDamagedPlayer)
+       {
+           // Release the object from freeze constraints
+           GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
 
-        // Calculate knockback direction
-        Vector2 knockbackDir = transform.position - other.transform.position;
+           // Calculate knockback direction
+           Vector2 knockbackDir = transform.position - other.transform.position;
 
-        // Apply knockback force
-        GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
+           // Apply knockback force
+           GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
 
-        // Attack Code
-        RefToPlayerCombatScript.TakeDamage(30);
-    }
+           // Attack Code
+           RefToPlayerCombatScript.TakeDamage(30);
+
+           // Set the hasDamagedPlayer variable to true so that the slime won't damage the player again in this collision
+           hasDamagedPlayer = true;
+       }
+   }
+
+   void OnCollisionExit2D(Collision2D other)
+   {
+       // Lock the object again
+    GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     
-
-}
-
-void OnCollisionExit2D(Collision2D other)
-{
-    // Lock the object again
     
-}
+       // Reset the hasDamagedPlayer variable when the collision ends
+       hasDamagedPlayer = false;
+   }
 
     public void TakeDamage(int damage)
     {
@@ -79,5 +88,4 @@ void OnCollisionExit2D(Collision2D other)
             transform.position = new Vector2(transform.position.x, 56f);
         }
     }
-
 }
