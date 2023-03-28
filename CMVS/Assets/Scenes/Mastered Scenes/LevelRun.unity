@@ -2174,6 +2174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime Mob
       objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328666, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
       propertyPath: speed
@@ -2186,18 +2191,48 @@ PrefabInstance:
       objectReference: {fileID: 220011035}
     - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
+      propertyPath: patrolRadius
+      value: 4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: knockbackForce
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
       propertyPath: minimumDistance
       value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: platformLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
       propertyPath: RefToPlayerCombatScript
       value: 
       objectReference: {fileID: 220011041}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: patrolPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840549269417328668, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: patrolPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7840549269417328669, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
       propertyPath: m_Mass
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7840549269417328669, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
@@ -48600,12 +48635,12 @@ PrefabInstance:
     - target: {fileID: 9050133197757373827, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.515825
+      value: 24.87
       objectReference: {fileID: 0}
     - target: {fileID: 9050133197757373827, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6797988
+      value: 50.2
       objectReference: {fileID: 0}
     - target: {fileID: 9050133197757373827, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
@@ -48654,6 +48689,16 @@ PrefabInstance:
       objectReference: {fileID: 220011035}
     - target: {fileID: 9050133197757373837, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050133197757373837, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+        type: 3}
+      propertyPath: minimumDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050133197757373837, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+        type: 3}
       propertyPath: RefToPlayerCombatScript
       value: 
       objectReference: {fileID: 220011041}
@@ -48665,7 +48710,7 @@ PrefabInstance:
     - target: {fileID: 9050133197757373838, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 467dbb5dad328bb458cac5c8305c9d3a, type: 3}
