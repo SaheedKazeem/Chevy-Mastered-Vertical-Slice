@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Mastered Scenes/Tutorial.unity
     guid: cfa4c34f1b6b8f945a6f7703b98e5d29
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mastered Scenes/THISISAdEMO.unity
     guid: 2ece646d77cebb64dbd51d19d4a3ec36
   m_configObjects: {}

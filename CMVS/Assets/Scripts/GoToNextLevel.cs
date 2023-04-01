@@ -30,7 +30,7 @@ public class GoToNextLevel : MonoBehaviour
          if (other.gameObject.CompareTag("Player"))
          {
             WinScreen.SetActive(true);
-            StartCoroutine(NextSceneLoader());
+            //StartCoroutine(NextSceneLoader());
          }
          else  WinScreen.SetActive(false);
         
