@@ -13,9 +13,9 @@ public class PlayerCombatScript : MonoBehaviour
     public DialogueManagerScript RefToDialogueManager;
     public DialogueTrigger RefToDialogueTrigger;
     //public PlayerAnimator RefToPlayerAnimator;
-    CapsuleCollider2D RefToKnockbackCollider;
+  
     public GameObject LoseScreen;
-    Knockback RefToKnockback;
+
     public bool hasDied;
     public Animator anim;
     public Transform attackPoint;
@@ -29,14 +29,9 @@ public class PlayerCombatScript : MonoBehaviour
     {
         currentHealth = maxHealth;
         
-        RefToHealthBar.SetMaxHealth(maxHealth);
-        RefToKnockbackCollider = attackPoint.GetComponent<CapsuleCollider2D>();
-        RefToKnockback = attackPoint.GetComponent<Knockback>();
-        if (RefToKnockback != null)
-        {
-            RefToKnockback.enabled = false;
-            RefToKnockbackCollider.enabled = false;
-        }
+        RefToHealthBar.SetMaxHealth(maxHealth); // Reference To Health Bar UI
+      
+        
         
 
 
@@ -61,28 +56,20 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void BabyKick()
     {
-       
-        // Detect enemies in range of attack
-        RefToKnockbackCollider.enabled = true;
-        RefToKnockback.enabled = true;
-        Collider2D[] EnemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        // Damage them
-
-        foreach (Collider2D enemy in EnemiesHit)
-        {
-            enemy.GetComponent<SlimeMobScript>().TakeDamage(25);
-        }
-        StartCoroutine(ColliderTimer(RefToKnockback, RefToKnockbackCollider));
+       //Removed script here because slime issues
+    
     }
     public void TakeDamage(int Damage)
     {
-        currentHealth -= Damage;
-        RefToHealthBar.SetHealth(currentHealth);
+        currentHealth -= Damage; //Decrement Health Function
+        RefToHealthBar.SetHealth(currentHealth); //Display UI
        // RefToPlayerAnimator.HasBeenDamaged();
 
     }
     public void onDeath()
     {
+        //Hidden Dialogue Manager script data disabled because no dialogue
+
         /* if (gameObject != null)
         {
              if (RefToDialogueManager.HasSentenceEnded == true)
@@ -97,9 +84,9 @@ public class PlayerCombatScript : MonoBehaviour
             }
         }
         */
-        anim.Play("Death forward");
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        StartCoroutine(LoseScreenCo());
+        anim.Play("Death forward"); //Play death animation
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll; //Freeze RigidBody
+        StartCoroutine(LoseScreenCo()); //Start Lose Screen Coroutine
        
         
         
@@ -111,21 +98,6 @@ public class PlayerCombatScript : MonoBehaviour
 
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        if (attackPoint == null)
-            return;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-    IEnumerator ColliderTimer(Knockback RefToKnockback, CapsuleCollider2D RefToKnockbackCollider)
-    {                                                                                                                                                                                                                               
-        if (attackPoint != null)
-        {
-            yield return new WaitForSeconds(0.5f);
-            RefToKnockbackCollider.enabled = false;
-            RefToKnockback.enabled = false;
-        }
-    }
     IEnumerator RestartScene()
     {
 
