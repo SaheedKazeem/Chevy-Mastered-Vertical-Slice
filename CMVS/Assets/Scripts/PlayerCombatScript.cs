@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class PlayerCombatScript : MonoBehaviour
 {
-    private TarodevController.IPlayerController _player;
+    private TarodevController.IPlayerController _player; // Reference to PlayerController Interface
     public int maxHealth = 100, currentHealth;
     public HealthBarScript RefToHealthBar;
     public DialogueManagerScript RefToDialogueManager;
