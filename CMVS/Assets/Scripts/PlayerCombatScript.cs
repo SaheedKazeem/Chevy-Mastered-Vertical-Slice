@@ -10,8 +10,8 @@ public class PlayerCombatScript : MonoBehaviour
     private TarodevController.IPlayerController _player; // Reference to PlayerController Interface
     public int maxHealth = 100, currentHealth;
     public HealthBarScript RefToHealthBar;
-    public DialogueManagerScript RefToDialogueManager;
-    public DialogueTrigger RefToDialogueTrigger;
+   // public DialogueManagerScript RefToDialogueManager;
+    //public DialogueTrigger RefToDialogueTrigger;
     //public PlayerAnimator RefToPlayerAnimator;
   
     public GameObject LoseScreen;
