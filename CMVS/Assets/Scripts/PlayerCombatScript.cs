@@ -75,7 +75,7 @@ public class PlayerCombatScript : MonoBehaviour
             HasDoneAnAttack = true;
            
         }
-        Thread.Sleep
+        
         if (HasDoneAnAttack)
         {
           HasDoneAnAttack = false; 
