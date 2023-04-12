@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BeeMobScript : MonoBehaviour
-{
+{   private float knockbackForce = 135f;
     public int maxHealth = 100;
     int currentHealth;
     public float speed;
@@ -15,16 +15,27 @@ public class BeeMobScript : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    private void OnCollisionStay2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         //Make the object lock in place
         if (other.gameObject.CompareTag("Player"))
         {
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+           //Attack Code
+            RefToPlayerCombatScript.TakeDamage(15);
+            //Disable Pathfinder for Knockback
+            GetComponent<Pathfinding.AIPath>().enabled = false;
 
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            
+            // Calculate knockback direction
+            Vector2 knockbackDir = transform.position - other.transform.position;
+
+            // Apply knockback force
+            GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
         }
 
     }
+    
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -45,14 +56,9 @@ public class BeeMobScript : MonoBehaviour
     }
     void Update()
     {
-        if (Vector2.Distance(transform.position, target.position) > minimumDistance)
+       
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
-        else
-        {
-            //Attack Code
-            RefToPlayerCombatScript.TakeDamage(15);
+            
 
         }
     }
