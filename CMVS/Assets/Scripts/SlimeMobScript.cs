@@ -26,11 +26,11 @@ public class SlimeMobScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !RefToPlayerCombatScript.mobcollided)
         {
             // Release the object from freeze constraints
            GetComponent<Pathfinding.AIPath>().enabled = false;
-             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             
             // Calculate knockback direction
             Vector2 knockbackDir = transform.position - other.transform.position;
@@ -44,6 +44,15 @@ public class SlimeMobScript : MonoBehaviour
          if (other.gameObject.CompareTag("Player") && RefToPlayerCombatScript.mobcollided)
          {
             TakeDamage(50);
+             // Release the object from freeze constraints
+           GetComponent<Pathfinding.AIPath>().enabled = false;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            
+            // Calculate knockback direction
+            Vector2 knockbackDir = transform.position - other.transform.position;
+
+            // Apply knockback force
+            GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
          }
 
 

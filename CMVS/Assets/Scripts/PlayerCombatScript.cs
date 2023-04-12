@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 //using MasterController;
 
 public class PlayerCombatScript : MonoBehaviour
@@ -68,20 +69,14 @@ public class PlayerCombatScript : MonoBehaviour
 
 
     }
-    public void BabyKick()
+    public async void BabyKick()
     {
-        if (!HasDoneAnAttack)
-        {
-            HasDoneAnAttack = true;
-           
-        }
-        
-        if (HasDoneAnAttack)
-        {
-          HasDoneAnAttack = false; 
-          return;     
-        }
-      
+       if (!HasDoneAnAttack)
+    {
+        HasDoneAnAttack = true;
+        await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
+        HasDoneAnAttack = false; // Reset the flag
+    }
      
       
        

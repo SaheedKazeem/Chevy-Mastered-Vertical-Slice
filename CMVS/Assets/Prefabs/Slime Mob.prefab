@@ -134,15 +134,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7840549269417328666}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30bc227eeff1cfb44b8114c57c4a3046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  speed: 1.25
+  speed: 5
   target: {fileID: 0}
-  minimumDistance: 1
+  minimumDistance: 0.41
   RefToPlayerCombatScript: {fileID: 0}
   RefToAnim: {fileID: 7840549269417328665}
 --- !u!114 &1460349779714422542
@@ -224,7 +224,7 @@ MonoBehaviour:
   radius: 0.4
   height: 0.01
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 3.45
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -249,4 +249,4 @@ MonoBehaviour:
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
-  constrainInsideGraph: 0
+  constrainInsideGraph: 1
