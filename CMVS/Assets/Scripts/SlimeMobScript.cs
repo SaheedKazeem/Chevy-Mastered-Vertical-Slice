@@ -41,6 +41,10 @@ public class SlimeMobScript : MonoBehaviour
             // Attack Code
             RefToPlayerCombatScript.TakeDamage(30);
         }
+         if (other.gameObject.CompareTag("Player") && RefToPlayerCombatScript.mobcollided)
+         {
+            TakeDamage(50);
+         }
 
 
     }
@@ -71,7 +75,7 @@ public class SlimeMobScript : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         // Die animation
-        gameObject.SetActive(false);
+        Destroy(gameObject);
 
         // Destroy object
     }

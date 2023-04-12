@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &81431390 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8319887629021572498, guid: f112bf539a8ad3a4090fdd730adce9dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 220011034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &93851334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,7 +2291,7 @@ PrefabInstance:
     - target: {fileID: 2193569006922413756, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
       propertyPath: m_Mass
-      value: 0.55242205
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2193569006922413756, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
@@ -2317,7 +2311,12 @@ PrefabInstance:
     - target: {fileID: 2193569006922413756, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2193569006922413756, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2193569006922413756, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
@@ -2486,7 +2485,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8331592632018411365, guid: a937502f2bfdb11428fc6c30be6b7363,
         type: 3}
+      propertyPath: maxSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331592632018411365, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331592632018411365, guid: a937502f2bfdb11428fc6c30be6b7363,
+        type: 3}
+      propertyPath: constrainInsideGraph
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2649,6 +2658,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
+        type: 3}
+      propertyPath: LoseScreen
+      value: 
+      objectReference: {fileID: 187951121}
+    - target: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
+        type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 822435969}
+    - target: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
+        type: 3}
+      propertyPath: RefToHealthBar
+      value: 
+      objectReference: {fileID: 2045187674}
     - target: {fileID: 8319887627834383361, guid: f112bf539a8ad3a4090fdd730adce9dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2767,30 +2791,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 220011034}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &220011041
+--- !u!114 &220011041 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 220011034}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81431390}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bf0111e1ce43aa4d96152b12c222a27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  RefToHealthBar: {fileID: 2045187674}
-  LoseScreen: {fileID: 187951121}
-  hasDied: 0
-  anim: {fileID: 1196808964}
-  attackPoint: {fileID: 822435969}
-  attackRange: 0.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  attackRate: 2
 --- !u!1 &244177354
 GameObject:
   m_ObjectHideFlags: 0

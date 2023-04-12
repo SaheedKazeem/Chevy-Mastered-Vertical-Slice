@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,17 +13,20 @@ public class PlayerCombatScript : MonoBehaviour
     public HealthBarScript RefToHealthBar;
    // public DialogueManagerScript RefToDialogueManager;
     //public DialogueTrigger RefToDialogueTrigger;
-    //public PlayerAnimator RefToPlayerAnimator;
+    public TarodevController.PlayerAnimator RefToPlayerAnimator;
   
     public GameObject LoseScreen;
 
     public bool hasDied;
+    public bool mobcollided;
+    public bool HasDoneAnAttack;
     public Animator anim;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public float attackRate = 2f;
     float nextAttackTime;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +37,16 @@ public class PlayerCombatScript : MonoBehaviour
       
         
         
+
+
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy") && HasDoneAnAttack)
+        {
+           mobcollided = true;
+        }
+        else mobcollided = false;
 
 
     }
@@ -56,7 +70,21 @@ public class PlayerCombatScript : MonoBehaviour
     }
     public void BabyKick()
     {
-       //Removed script here because slime issues
+        if (!HasDoneAnAttack)
+        {
+            HasDoneAnAttack = true;
+           
+        }
+        Thread.Sleep
+        if (HasDoneAnAttack)
+        {
+          HasDoneAnAttack = false; 
+          return;     
+        }
+      
+     
+      
+       
     
     }
     public void TakeDamage(int Damage)

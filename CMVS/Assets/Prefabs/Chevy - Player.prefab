@@ -29775,6 +29775,7 @@ GameObject:
   - component: {fileID: 8319887629021572509}
   - component: {fileID: 8319887629021572510}
   - component: {fileID: 8319887629021572504}
+  - component: {fileID: 886824798584697377}
   - component: {fileID: 8319887629021572511}
   - component: {fileID: 8319887629021572508}
   - component: {fileID: 8319887629021572505}
@@ -29828,6 +29829,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f4e347b70ab744a76525cac347990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &886824798584697377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319887629021572498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0111e1ce43aa4d96152b12c222a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  RefToHealthBar: {fileID: 0}
+  RefToPlayerAnimator: {fileID: 8319887628595860240}
+  LoseScreen: {fileID: 0}
+  hasDied: 0
+  mobcollided: 0
+  HasDoneAnAttack: 0
+  anim: {fileID: 8319887628595860247}
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  attackRate: 2
 --- !u!50 &8319887629021572511
 Rigidbody2D:
   serializedVersion: 4
