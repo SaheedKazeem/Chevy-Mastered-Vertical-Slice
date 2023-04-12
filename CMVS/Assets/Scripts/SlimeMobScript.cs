@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SlimeMobScript : MonoBehaviour
 {
-    private float knockbackForce = 180f;
+    
+    private float knockbackForce = 135f;
     public int maxHealth = 100;
     bool beenHit = false;
     int currentHealth;
@@ -14,6 +16,7 @@ public class SlimeMobScript : MonoBehaviour
     public float minimumDistance;
     public PlayerCombatScript RefToPlayerCombatScript;
     public Animator RefToAnim;
+     Vector2 knockbackDir;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +29,9 @@ public class SlimeMobScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Release the object from freeze constraints
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-             
-
+           GetComponent<Pathfinding.AIPath>().enabled = false;
+             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            
             // Calculate knockback direction
             Vector2 knockbackDir = transform.position - other.transform.position;
 
@@ -44,9 +47,13 @@ public class SlimeMobScript : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-        // Lock the object again
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+       if (other.gameObject.CompareTag("Player"))
+       {
+          StartCoroutine(AITimer());
+      
+       }
+      
+        
     }
 
     public void TakeDamage(int damage)
@@ -74,5 +81,12 @@ public class SlimeMobScript : MonoBehaviour
     {
 
     }
+  IEnumerator AITimer()
+    {
 
+        yield return new WaitForSeconds(1f);
+        GetComponent<Pathfinding.AIPath>().enabled = true;
+
+    }
+    
 }
