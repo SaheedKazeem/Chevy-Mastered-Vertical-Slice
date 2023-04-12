@@ -6,6 +6,7 @@ public class SlimeMobScript : MonoBehaviour
 {
     private float knockbackForce = 180f;
     public int maxHealth = 100;
+    bool beenHit = false;
     int currentHealth;
     public float speed;
     float reftoSpeed;
@@ -25,7 +26,8 @@ public class SlimeMobScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Release the object from freeze constraints
-            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+             
 
             // Calculate knockback direction
             Vector2 knockbackDir = transform.position - other.transform.position;
@@ -44,6 +46,7 @@ public class SlimeMobScript : MonoBehaviour
     {
         // Lock the object again
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
     }
 
     public void TakeDamage(int damage)
@@ -70,14 +73,6 @@ public class SlimeMobScript : MonoBehaviour
     void Update()
     {
 
-        if (Vector2.Distance(transform.position, target.position) > minimumDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
-        if (transform.position.y <= -10.5f)
-        {
-            transform.position = new Vector2(transform.position.x, 56f);
-        }
     }
 
 }
