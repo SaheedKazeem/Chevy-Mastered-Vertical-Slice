@@ -11,10 +11,12 @@ public class BeeMobScript : MonoBehaviour
     public Transform target;
     public float minimumDistance;
     public PlayerCombatScript RefToPlayerCombatScript;
+    public GameObject BeeBullet;
     public Animator RefToAnim;
     void Start()
     {
         currentHealth = maxHealth;
+        StartCoroutine(BulletCloneTimer());
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -63,9 +65,9 @@ public class BeeMobScript : MonoBehaviour
     }
     void Update()
     {
-
+        
         {
-
+           
 
         }
     }
@@ -75,6 +77,31 @@ public class BeeMobScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         GetComponent<Pathfinding.AIPath>().enabled = true;
 
+    }
+     IEnumerator BulletCloneTimer()
+    {
+        while (true)
+    {
+        // Instantiate new GameObject from the same position as this GameObject
+        Instantiate(BeeBullet,transform.position, Quaternion.identity, transform);
+        yield return new WaitForSeconds(2.5f);
+
+        // Check if the GameObject this script is attached to still exists
+        if (gameObject == null)
+        {
+            yield break; // exit the coroutine if it doesn't exist
+        }
+
+        // Instantiate a new bullet from the same position as this GameObject
+        GameObject bullet = Instantiate(BeeBullet, transform.position, Quaternion.identity, transform.parent);
+
+        // Destroy the bullet after 3 seconds
+        Destroy(bullet, 3f);
+        
+        
+        Debug.Log("Why arent you working");
+
+    }
     }
 
 

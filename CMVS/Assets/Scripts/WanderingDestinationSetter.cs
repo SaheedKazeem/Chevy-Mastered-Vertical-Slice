@@ -5,7 +5,6 @@ using Pathfinding;
 [HelpURL("http://arongranberg.com/astar/documentation/stable/class_wandering_destination_setter.php")]
 public class WanderingDestinationSetter : MonoBehaviour {
     public float radius = 20;
-
     IAstarAI ai;
 
     void Start () {
@@ -14,7 +13,6 @@ public class WanderingDestinationSetter : MonoBehaviour {
 
     Vector3 PickRandomPoint () {
         var point = Random.insideUnitSphere * radius;
-
         point.y = 0;
         point += ai.position;
         return point;
