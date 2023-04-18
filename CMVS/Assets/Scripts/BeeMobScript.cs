@@ -83,8 +83,8 @@ public class BeeMobScript : MonoBehaviour
         while (true)
     {
         // Instantiate new GameObject from the same position as this GameObject
-        Instantiate(BeeBullet,transform.position, Quaternion.identity, transform);
-        yield return new WaitForSeconds(2.5f);
+        
+        yield return new WaitForSeconds(1.25f);
 
         // Check if the GameObject this script is attached to still exists
         if (gameObject == null)
@@ -98,8 +98,7 @@ public class BeeMobScript : MonoBehaviour
         // Destroy the bullet after 3 seconds
         Destroy(bullet, 3f);
         
-        
-        Debug.Log("Why arent you working");
+    
 
     }
     }

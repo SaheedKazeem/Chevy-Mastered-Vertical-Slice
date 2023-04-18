@@ -15,7 +15,7 @@ public class BulletScript : MonoBehaviour
         {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = brokenBullet;
-            await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
+            await Task.Delay(300); // Wait for 1 second (1000 milliseconds)
             Destroy(this.gameObject);       
         }
         if (other.gameObject.CompareTag("Player"))
@@ -26,12 +26,11 @@ public class BulletScript : MonoBehaviour
             transform.parent.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(50);
             Destroy(gameObject);  
         }
+        }
         if (gameObject == null)
         {
             return;
         }
-        }
-       
       
     }
        
