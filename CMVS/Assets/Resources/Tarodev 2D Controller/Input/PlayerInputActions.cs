@@ -256,6 +256,17 @@ namespace TarodevController
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7fd49558-38e7-4110-a839-93fd9b949924"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""0568f55d-4e6c-420d-84e7-9c855eddb769"",
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",

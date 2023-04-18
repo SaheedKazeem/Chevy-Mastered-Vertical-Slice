@@ -7,10 +7,11 @@ public class GoToNextLevel : MonoBehaviour
 {
    // public DialogueManagerScript ReftoDialogueManager;
    public GameObject WinScreen;
+   public WinTreeScript RefToWinArt;
     // Start is called before the first frame update
     void Start()
     {
-
+        RefToWinArt.WinTree.enabled = false;
     }
 
     // Start is called before the first frame update
@@ -29,18 +30,20 @@ public class GoToNextLevel : MonoBehaviour
     {
          if (other.gameObject.CompareTag("Player"))
          {
-            WinScreen.SetActive(true);
-            //StartCoroutine(NextSceneLoader());
+        
+            StartCoroutine(WinStateAnim());
          }
          else  WinScreen.SetActive(false);
         
 
     }
 
-    public IEnumerator NextSceneLoader()
+    public IEnumerator WinStateAnim()
     {
-        yield return new WaitForSeconds(1.35f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        RefToWinArt.WinTree.enabled = true;
+        RefToWinArt.WinTree.Play("star fx");
+        yield return new WaitForSeconds(1.5f);
+        WinScreen.SetActive(true);
     }
     // Update is called once per frame
     void Update()

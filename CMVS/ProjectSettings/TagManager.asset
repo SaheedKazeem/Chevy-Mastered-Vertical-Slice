@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Jane
   - Platform
+  - Point
   layers:
   - Default
   - TransparentFX

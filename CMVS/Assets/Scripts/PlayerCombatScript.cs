@@ -26,6 +26,7 @@ public class PlayerCombatScript : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public float attackRate = 2f;
+    public Collider2D AttackPoint;
     float nextAttackTime;
     
     
@@ -73,9 +74,11 @@ public class PlayerCombatScript : MonoBehaviour
     {
        if (!HasDoneAnAttack)
     {
+        AttackPoint.enabled = true;
         HasDoneAnAttack = true;
         await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
         HasDoneAnAttack = false; // Reset the flag
+        AttackPoint.enabled = true;
     }
      
       

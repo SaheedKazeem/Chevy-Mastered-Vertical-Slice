@@ -5,36 +5,42 @@ using System.Threading.Tasks;
 
 public class BulletScript : MonoBehaviour
 {
-    public Sprite brokenBullet; 
+    public Sprite brokenBullet;
     Transform parentTransform;
     async void OnCollisionEnter2D(Collision2D other)
     {
-        if (gameObject != null)
+        if (other.collider.gameObject == null)
         {
-            if (other.gameObject.CompareTag("TileMap"))
-        {
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = brokenBullet;
-            await Task.Delay(300); // Wait for 1 second (1000 milliseconds)
-            Destroy(this.gameObject);       
+            return;
         }
-        if (other.gameObject.CompareTag("Player"))
+
+        if (other.gameObject.CompareTag("TileMap"))
         {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = brokenBullet;
             await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
-            transform.parent.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(50);
-            Destroy(gameObject);  
+            if (gameObject != null)
+            {
+                Destroy(this.gameObject);
+            }
         }
-        }
-        if (gameObject == null)
+        else if (other.gameObject.CompareTag("Player"))
         {
-            return;
+            if (parentTransform != null && other.gameObject.CompareTag("Player"))
+            {
+                parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
+                
+            }
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = brokenBullet;
+           
         }
-      
+
+
+
     }
-       
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +50,6 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
