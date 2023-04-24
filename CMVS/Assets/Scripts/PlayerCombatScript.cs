@@ -5,8 +5,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
-//using MasterController;
+using playerScriptsSpace;
 
+namespace playerScriptsSpace
+{
 public class PlayerCombatScript : MonoBehaviour
 {
     private TarodevController.IPlayerController _player; // Reference to PlayerController Interface
@@ -18,16 +20,14 @@ public class PlayerCombatScript : MonoBehaviour
   
     public GameObject LoseScreen;
 
-    public bool hasDied;
+   
     public bool mobcollided;
     public bool HasDoneAnAttack;
     public Animator anim;
     public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
-    public float attackRate = 2f;
+    
     public Collider2D AttackPoint;
-    float nextAttackTime;
+    
     
     
     // Start is called before the first frame update
@@ -143,3 +143,5 @@ public class PlayerCombatScript : MonoBehaviour
 
 }
 
+
+}
