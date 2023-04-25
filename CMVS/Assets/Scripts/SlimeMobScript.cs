@@ -47,11 +47,11 @@ public class SlimeMobScript : MonoBehaviour
             TakeDamage(50);
              // Release the object from freeze constraints
            GetComponent<Pathfinding.AIPath>().enabled = false;
+          
+           
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            
-            // Calculate knockback direction
-            Vector2 knockbackDir = transform.position - other.transform.position;
-
+             // Calculate knockback direction
+           Vector2 knockbackDir = transform.position - other.transform.position;
             // Apply knockback force
             GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
          }
@@ -66,6 +66,12 @@ public class SlimeMobScript : MonoBehaviour
           StartCoroutine(AITimer());
       
        }
+        if (other.gameObject.CompareTag("Attack"))
+       {
+          StartCoroutine(AITimer());
+      
+       }
+      
       
         
     }

@@ -1,6 +1,6 @@
 // ReSharper disable ClassWithVirtualMembersNeverInherited.Global
 using UnityEngine.Events;
-
+using PlayerControllers;
 using System;
 using System.Collections;
 using UnityEngine;

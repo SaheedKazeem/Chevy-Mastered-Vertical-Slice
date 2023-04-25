@@ -2,41 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
+using PlayerControllers;
 
 public class BulletScript : MonoBehaviour
 {
     public Sprite brokenBullet;
     Transform parentTransform;
-    async void OnCollisionEnter2D(Collision2D other)
+
+    IEnumerator OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.gameObject == null)
         {
-            return;
+            yield break;
         }
 
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("You've been hit");
+            if (parentTransform != null)
+            {
+                parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
+            }
+
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = brokenBullet;
+        }
         if (other.gameObject.CompareTag("TileMap"))
         {
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = brokenBullet;
-            await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
+            yield return new WaitForSeconds(0.325f); // Wait for 0.5 seconds
             if (gameObject != null)
             {
                 Destroy(this.gameObject);
             }
         }
-        else if (other.gameObject.CompareTag("Player"))
-        {
-            if (parentTransform != null && other.gameObject.CompareTag("Player"))
-            {
-                parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
-                
-            }
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = brokenBullet;
-           
-        }
-
-
 
     }
 

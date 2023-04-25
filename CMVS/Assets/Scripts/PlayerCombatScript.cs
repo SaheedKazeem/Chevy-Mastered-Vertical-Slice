@@ -27,7 +27,7 @@ public class PlayerCombatScript : MonoBehaviour
     public Animator anim;
     public Transform attackPoint;
     
-    public Collider2D AttackPoint;
+    public GameObject AttackPoint;
     
     
     
@@ -43,14 +43,14 @@ public class PlayerCombatScript : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D other)
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy") && HasDoneAnAttack)
         {
            mobcollided = true;
         }
         else mobcollided = false;
-
 
     }
 
@@ -75,11 +75,11 @@ public class PlayerCombatScript : MonoBehaviour
     {
        if (!HasDoneAnAttack)
     {
-        AttackPoint.enabled = true;
+        AttackPoint.SetActive(true);
         HasDoneAnAttack = true;
         await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
         HasDoneAnAttack = false; // Reset the flag
-        AttackPoint.enabled = true;
+        AttackPoint.SetActive(false);
     }
      
       

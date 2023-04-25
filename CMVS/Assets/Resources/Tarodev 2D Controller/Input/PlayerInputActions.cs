@@ -267,6 +267,17 @@ namespace TarodevController
                 },
                 {
                     ""name"": """",
+                    ""id"": ""4195327f-404d-4b96-9a8b-6034e900f50c"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""0568f55d-4e6c-420d-84e7-9c855eddb769"",
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
