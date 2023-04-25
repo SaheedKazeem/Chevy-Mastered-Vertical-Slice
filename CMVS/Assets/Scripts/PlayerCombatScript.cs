@@ -5,20 +5,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
-using playerScriptsSpace;
 
-namespace playerScriptsSpace
+
+
+namespace PlayerControllers
 {
 public class PlayerCombatScript : MonoBehaviour
 {
     private TarodevController.IPlayerController _player; // Reference to PlayerController Interface
-    public int maxHealth = 100, currentHealth;
-    public HealthBarScript RefToHealthBar;
+    [SerializeField] int maxHealth = 100, currentHealth;
+    [SerializeField] HealthBarScript RefToHealthBar;
    // public DialogueManagerScript RefToDialogueManager;
     //public DialogueTrigger RefToDialogueTrigger;
-    public TarodevController.PlayerAnimator RefToPlayerAnimator;
+    [SerializeField] TarodevController.PlayerAnimator RefToPlayerAnimator;
   
-    public GameObject LoseScreen;
+    [SerializeField]GameObject LoseScreen;
 
    
     public bool mobcollided;
@@ -143,5 +144,5 @@ public class PlayerCombatScript : MonoBehaviour
 
 }
 
-
 }
+
