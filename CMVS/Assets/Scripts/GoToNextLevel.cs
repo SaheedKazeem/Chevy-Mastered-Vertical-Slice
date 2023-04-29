@@ -42,7 +42,7 @@ public class GoToNextLevel : MonoBehaviour
     {
         RefToWinArt.WinTree.enabled = true;
         RefToWinArt.WinTree.Play("star fx");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.2f);
         WinScreen.SetActive(true);
     }
     // Update is called once per frame
