@@ -141,7 +141,7 @@ public class PlayerCombatScript : MonoBehaviour
     IEnumerator RestartScene()
     {
 
-        yield return new WaitForSeconds(3.15f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
