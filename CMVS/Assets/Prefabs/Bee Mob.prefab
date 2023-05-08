@@ -109,9 +109,10 @@ MonoBehaviour:
   speed: 3
   target: {fileID: 8931638543417178172, guid: f70c62151281a3349a1456d2cbfe6fc3, type: 3}
   minimumDistance: 1
-  RefToPlayerCombatScript: {fileID: 4162763347359629052, guid: f70c62151281a3349a1456d2cbfe6fc3,
+  RefToPlayerCombatScript: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
     type: 3}
-  BeeBullet: {fileID: 0}
+  BeeBullet: {fileID: 1177519772467087232, guid: b6e050dc6033ca545a49c8229e2f1b14,
+    type: 3}
   RefToAnim: {fileID: 9050133197757373826}
 --- !u!114 &850404192642014395
 MonoBehaviour:
@@ -320,6 +321,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177519772467087293, guid: b6e050dc6033ca545a49c8229e2f1b14,
+        type: 3}
+      propertyPath: parentBee
+      value: 
+      objectReference: {fileID: 9050133197757373838}
+    - target: {fileID: 1177519772467087294, guid: b6e050dc6033ca545a49c8229e2f1b14,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.1661075
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e050dc6033ca545a49c8229e2f1b14, type: 3}

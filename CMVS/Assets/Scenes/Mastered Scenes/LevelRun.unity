@@ -49296,9 +49296,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954761547107375385, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
+      propertyPath: parentBee
+      value: 
+      objectReference: {fileID: 1457547803}
+    - target: {fileID: 6954761547107375385, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+        type: 3}
+      propertyPath: playerRef
+      value: 
+      objectReference: {fileID: 220011041}
+    - target: {fileID: 6954761547107375385, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+        type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 1457547813}
+    - target: {fileID: 6954761547107375386, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.11500017
+      objectReference: {fileID: 0}
     - target: {fileID: 6954761547107375386, guid: 467dbb5dad328bb458cac5c8305c9d3a,
         type: 3}
       propertyPath: m_BodyType

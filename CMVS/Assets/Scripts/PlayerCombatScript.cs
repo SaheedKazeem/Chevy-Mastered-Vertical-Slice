@@ -98,7 +98,11 @@ public class PlayerCombatScript : MonoBehaviour
     public void TakeDamage(int Damage)
     {
         currentHealth -= Damage; //Decrement Health Function
-        RefToHealthBar.SetHealth(currentHealth); //Display UI
+        if (RefToHealthBar != null)
+        {
+            RefToHealthBar.SetHealth(currentHealth); //Display UI
+        }
+        
        // RefToPlayerAnimator.HasBeenDamaged();
 
     }

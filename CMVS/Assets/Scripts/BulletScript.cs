@@ -7,9 +7,14 @@ using PlayerControllers;
 public class BulletScript : MonoBehaviour
 {
     public Sprite brokenBullet;
-    [SerializeField] Transform parentTransform;
+    [SerializeField] PlayerCombatScript playerRef;
 
-  
+     void Awake()
+    {
+        GameObject RefofPlayer;
+        RefofPlayer = GameObject.Find("Chevy - Player");
+        playerRef = RefofPlayer.GetComponent<PlayerCombatScript>();
+    }
     IEnumerator OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.gameObject == null)
@@ -21,7 +26,7 @@ public class BulletScript : MonoBehaviour
         {
             Debug.Log("You've been hit");
 
-            parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
+            playerRef.TakeDamage(30);
 
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = brokenBullet;
