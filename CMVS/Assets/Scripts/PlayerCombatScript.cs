@@ -66,7 +66,11 @@ public class PlayerCombatScript : MonoBehaviour
         if (transform.position.y <= -10.5f)
         {
             transform.position = new Vector2(transform.position.x, 56f);
-            TakeDamage(10);
+            if(this != null)
+            {
+                 TakeDamage(10);
+            }
+           
         }
 
 
@@ -75,11 +79,16 @@ public class PlayerCombatScript : MonoBehaviour
     {
        if (!HasDoneAnAttack)
     {
-        AttackPoint.SetActive(true);
+        
+             AttackPoint.SetActive(true);
         HasDoneAnAttack = true;
         await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
         HasDoneAnAttack = false; // Reset the flag
+        if (AttackPoint != null)
+        {
         AttackPoint.SetActive(false);
+        }
+       
     }
      
       
