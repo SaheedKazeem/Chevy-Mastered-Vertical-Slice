@@ -7,8 +7,9 @@ using PlayerControllers;
 public class BulletScript : MonoBehaviour
 {
     public Sprite brokenBullet;
-    Transform parentTransform;
+    [SerializeField] Transform parentTransform;
 
+  
     IEnumerator OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.gameObject == null)
@@ -19,10 +20,8 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("You've been hit");
-            if (parentTransform != null)
-            {
-                parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
-            }
+
+            parentTransform.GetComponent<BeeMobScript>().RefToPlayerCombatScript.TakeDamage(30);
 
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = brokenBullet;
@@ -42,10 +41,6 @@ public class BulletScript : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        parentTransform = transform.parent;
-    }
 
     // Update is called once per frame
     void Update()

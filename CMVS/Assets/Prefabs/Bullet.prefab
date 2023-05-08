@@ -137,3 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brokenBullet: {fileID: 21300000, guid: 6920b627777645d4f97f6dead59f7dc7, type: 3}
+  parentTransform: {fileID: 9050133197757373827, guid: 467dbb5dad328bb458cac5c8305c9d3a,
+    type: 3}
