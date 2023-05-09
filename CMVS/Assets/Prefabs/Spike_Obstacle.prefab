@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6377626921821750002}
   - component: {fileID: 6377626921821750015}
   - component: {fileID: 6377626921821750014}
-  - component: {fileID: 7206192764656351964}
+  - component: {fileID: 7153551248344250375}
   m_Layer: 0
   m_Name: Spike_Obstacle
   m_TagString: Untagged
@@ -28,9 +28,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6377626921821750003}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.293, y: -3.494, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,10 +47,12 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -88,7 +91,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &6377626921821750002
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,6 +104,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -134,7 +138,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.35}
   m_Size: {x: 0.97, y: 0.33}
   m_Direction: 1
---- !u!114 &7206192764656351964
+--- !u!114 &7153551248344250375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,8 +147,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6377626921821750003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Script: {fileID: 11500000, guid: b024bb88e58426b45acb6fc4ba655e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RefToDialogueBox: {fileID: 0}
-  RefToDialogueTrigger: {fileID: 0}
+  dialogue:
+    name: Spike Dialogue
+    sentences:
+    - Ow that hurts, don't step on these spikes unless you want to send me to an
+      early grave
+    - Jump over them or dash over them
+    - But please, I'm halfway through Breaking Bad
+    - 'I need to finish this
+
+'

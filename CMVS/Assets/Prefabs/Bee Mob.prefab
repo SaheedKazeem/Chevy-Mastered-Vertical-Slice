@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2252971308953591338}
   - component: {fileID: 7836523146581113595}
   - component: {fileID: 8024113881547359474}
+  - component: {fileID: 1457547804}
   m_Layer: 0
   m_Name: Bee Mob
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 9050133197757373838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.57, y: 0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.83206, y: 0.83206, z: 0.83206}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6954761547107375397}
@@ -107,10 +108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 45
   speed: 3
-  target: {fileID: 8931638543417178172, guid: f70c62151281a3349a1456d2cbfe6fc3, type: 3}
-  minimumDistance: 1
-  RefToPlayerCombatScript: {fileID: 886824798584697377, guid: f112bf539a8ad3a4090fdd730adce9dd,
-    type: 3}
+  target: {fileID: 0}
+  minimumDistance: 0.5
+  RefToPlayerCombatScript: {fileID: 0}
   BeeBullet: {fileID: 1177519772467087232, guid: b6e050dc6033ca545a49c8229e2f1b14,
     type: 3}
   RefToAnim: {fileID: 9050133197757373826}
@@ -127,10 +127,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 0.5
-  height: 2
+  radius: 0.91
+  height: 1.99
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 3.44
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -142,20 +142,20 @@ MonoBehaviour:
   enableRotation: 1
   autoRepath:
     mode: 2
-    interval: 0.5
-    sensitivity: 10
+    interval: 2
+    sensitivity: 5.9
     maximumInterval: 2
-    visualizeSensitivity: 0
+    visualizeSensitivity: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 2
-  endReachedDistance: 0.2
-  alwaysDrawGizmos: 0
+  slowdownDistance: 1.8
+  pickNextWaypointDist: 0.85
+  endReachedDistance: 0.71
+  alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
-  constrainInsideGraph: 0
+  constrainInsideGraph: 1
 --- !u!95 &9050133197757373826
 Animator:
   serializedVersion: 4
@@ -186,11 +186,11 @@ Rigidbody2D:
   m_GameObject: {fileID: 9050133197757373838}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1.14
-  m_AngularDrag: 2.71
+  m_LinearDrag: 2.39
+  m_AngularDrag: 3.04
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9050133197757373838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
   m_Name: 
@@ -238,7 +238,7 @@ MonoBehaviour:
   traversableTags: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
-    value: -1
+    value: 4
 --- !u!70 &8024113881547359474
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -255,6 +255,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00973427, y: 0.04867973}
   m_Size: {x: 1.0459702, y: 1.6300696}
   m_Direction: 0
+--- !u!114 &1457547804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9050133197757373838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26595938107a037489dacde649d6e7bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 20
 --- !u!1001 &8129882683121065636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,10 +340,15 @@ PrefabInstance:
       propertyPath: parentBee
       value: 
       objectReference: {fileID: 9050133197757373838}
+    - target: {fileID: 1177519772467087293, guid: b6e050dc6033ca545a49c8229e2f1b14,
+        type: 3}
+      propertyPath: playerRef
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1177519772467087294, guid: b6e050dc6033ca545a49c8229e2f1b14,
         type: 3}
       propertyPath: m_Mass
-      value: 0.1661075
+      value: 0.11500017
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e050dc6033ca545a49c8229e2f1b14, type: 3}

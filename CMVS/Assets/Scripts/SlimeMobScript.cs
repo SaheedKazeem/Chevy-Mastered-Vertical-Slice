@@ -6,7 +6,7 @@ using PlayerControllers;
 
 public class SlimeMobScript : MonoBehaviour
 {
-    
+
     private float knockbackForce = 135f;
     public int maxHealth = 100;
     bool beenHit = false;
@@ -17,7 +17,8 @@ public class SlimeMobScript : MonoBehaviour
     public float minimumDistance;
     public PlayerCombatScript RefToPlayerCombatScript;
     public Animator RefToAnim;
-     Vector2 knockbackDir;
+    Vector2 PlayerDir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,53 +28,51 @@ public class SlimeMobScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") && !RefToPlayerCombatScript.mobcollided)
+        if (other.gameObject.CompareTag("Player")  )
         {
             // Release the object from freeze constraints
-           GetComponent<Pathfinding.AIPath>().enabled = false;
+            GetComponent<Pathfinding.AIPath>().enabled = false;
+           
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            
-            // Calculate knockback direction
+              // Calculate knockback direction
             Vector2 knockbackDir = transform.position - other.transform.position;
 
             // Apply knockback force
             GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
 
             // Attack Code
-            RefToPlayerCombatScript.TakeDamage(30);
-        }
-         if (other.gameObject.CompareTag("Player") && RefToPlayerCombatScript.mobcollided)
-         {
-            TakeDamage(50);
-             // Release the object from freeze constraints
-           GetComponent<Pathfinding.AIPath>().enabled = false;
-          
+            if (!RefToPlayerCombatScript.mobcollided)
+            {
+                 RefToPlayerCombatScript.TakeDamage(30);
+            }
            
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-             // Calculate knockback direction
-           Vector2 knockbackDir = transform.position - other.transform.position;
-            // Apply knockback force
-            GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
-         }
+            if(RefToPlayerCombatScript.mobcollided)
+            {
+                TakeDamage(50);
+            }
+        }
+
 
 
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-       if (other.gameObject.CompareTag("Player"))
-       {
-          StartCoroutine(AITimer());
-      
-       }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(AITimer());
+
+        }
         if (other.gameObject.CompareTag("Attack"))
-       {
-          StartCoroutine(AITimer());
-      
-       }
-      
-      
-        
+        {
+            RefToPlayerCombatScript.mobcollided = false;
+            StartCoroutine(AITimer());
+
+
+        }
+
+
+
     }
 
     public void TakeDamage(int damage)
@@ -101,12 +100,12 @@ public class SlimeMobScript : MonoBehaviour
     {
 
     }
-  IEnumerator AITimer()
+    IEnumerator AITimer()
     {
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.9f);
         GetComponent<Pathfinding.AIPath>().enabled = true;
 
     }
-    
+
 }

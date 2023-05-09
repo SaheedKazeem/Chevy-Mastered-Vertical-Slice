@@ -29913,8 +29913,7 @@ MonoBehaviour:
   mobcollided: 0
   HasDoneAnAttack: 0
   anim: {fileID: 8319887628595860247}
-  attackPoint: {fileID: 0}
-  AttackPoint: {fileID: 0}
+  AttackPoint: {fileID: 4449894732960290718}
 --- !u!50 &8319887629021572511
 Rigidbody2D:
   serializedVersion: 4
