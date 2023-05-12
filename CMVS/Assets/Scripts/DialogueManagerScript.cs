@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using PlayerControllers;
 
 public class DialogueManagerScript : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DialogueManagerScript : MonoBehaviour
     public TextMeshProUGUI nameText, dialogueText;
     public GameObject RefToDialogueBox, RefToSkipButton;
     public bool HasSentenceEnded;
+
 
     Queue<string> sentences;
     // Start is called before the first frame update
@@ -20,6 +22,7 @@ public class DialogueManagerScript : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        
         RefToAnimator.SetBool("DialogueBoxIsOpen", true);
         Debug.Log("Starting conversation with " + dialogue.name);
         sentences.Clear();
@@ -63,6 +66,7 @@ public class DialogueManagerScript : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
+        
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;

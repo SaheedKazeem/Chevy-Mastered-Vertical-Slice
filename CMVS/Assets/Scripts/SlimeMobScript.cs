@@ -39,15 +39,18 @@ public class SlimeMobScript : MonoBehaviour
 
             // Apply knockback force
             GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
-
+            
             // Attack Code
             if (!RefToPlayerCombatScript.mobcollided)
             {
+                 GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
+                
                  RefToPlayerCombatScript.TakeDamage(30);
             }
            
             if(RefToPlayerCombatScript.mobcollided)
             {
+                 GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * knockbackForce, ForceMode2D.Impulse);
                 TakeDamage(50);
             }
         }

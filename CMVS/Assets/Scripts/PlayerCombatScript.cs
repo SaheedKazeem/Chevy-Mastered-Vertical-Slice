@@ -27,7 +27,7 @@ namespace PlayerControllers
         public Animator anim;
         CapsuleCollider2D attackPoint;
 
-        public GameObject AttackPoint;
+        //public GameObject AttackPoint;
 
 
 
@@ -37,8 +37,8 @@ namespace PlayerControllers
             currentHealth = maxHealth;
 
             RefToHealthBar.SetMaxHealth(maxHealth); // Reference To Health Bar UI
-            attackPoint = AttackPoint.GetComponent<CapsuleCollider2D>();
-            attackPoint.enabled = false;
+            //attackPoint = AttackPoint.GetComponent<CapsuleCollider2D>();
+            //attackPoint.enabled = false;
 
 
 
@@ -73,12 +73,16 @@ namespace PlayerControllers
             }
             if (transform.position.y <= -10.5f)
             {
-                transform.position = new Vector2(transform.position.x, 56f);
+                transform.position = new Vector2(transform.position.x, 55f);
                 if (this != null)
                 {
                     TakeDamage(10);
                 }
 
+            }
+            else if (transform.position.y >= 56f)
+            {   
+                transform.position = new Vector2(transform.position.x, 56f);
             }
 
 
@@ -88,17 +92,17 @@ namespace PlayerControllers
             if (!HasDoneAnAttack)
             {
 
-                AttackPoint.SetActive(true);
-                attackPoint.enabled = true;
+               // AttackPoint.SetActive(true);
+                // attackPoint.enabled = true;
                 HasDoneAnAttack = true;
-                await Task.Delay(500); // Wait for 1 second (1000 milliseconds)
+                await Task.Delay(750); // Wait for 1 second (1000 milliseconds)
                 HasDoneAnAttack = false; // Reset the flag
-                if (AttackPoint != null)
+                /*if (AttackPoint != null)
                 {
-                    AttackPoint.SetActive(false);
+                    //AttackPoint.SetActive(false);
                     attackPoint.enabled = false;
                 }
-
+                */
             }
 
 
