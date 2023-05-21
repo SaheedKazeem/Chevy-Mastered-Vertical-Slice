@@ -2,6 +2,12 @@
 # Unity folders and files
 ###
 [Aa]ssets/AssetStoreTools*
+Logs/
+UserSettings/
+.vscode/
+.vs/
+
+
 [Bb]uild/
 [Ll]ibrary/
 [Ll]ocal[Cc]ache/
@@ -45,3 +51,4 @@ Final Game 2.0.zip
 FMP Game Files/FMP 2.0 Game Files.zip.001
 FMP Game Files/FMP 2.0 Game Files.zip.002
 FMP Game Files/FMP 2.0 Game Files.zip.003
+*.log

@@ -1,135 +1,176 @@
-﻿using UnityEngine.SceneManagement;
+﻿using System.Threading;
+using System;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MasterController;
+using System.Threading.Tasks;
 
-public class PlayerCombatScript : MonoBehaviour
+
+
+namespace PlayerControllers
 {
-    public int maxHealth = 100, currentHealth;
-    public HealthBarScript RefToHealthBar;
-    public DialogueManagerScript RefToDialogueManager;
-    public DialogueTrigger RefToDialogueTrigger;
-    public PlayerAnimator RefToPlayerAnimator;
-    CapsuleCollider2D RefToKnockbackCollider;
-    Knockback RefToKnockback;
-    public bool hasDied;
-    public Animator anim;
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
-    public float attackRate = 2f;
-    float nextAttackTime;
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerCombatScript : MonoBehaviour
     {
-        currentHealth = maxHealth;
+        private TarodevController.IPlayerController _player; // Reference to PlayerController Interface
+        [SerializeField] int maxHealth = 100, currentHealth;
+        [SerializeField] HealthBarScript RefToHealthBar;
+        // public DialogueManagerScript RefToDialogueManager;
+        //public DialogueTrigger RefToDialogueTrigger;
+        [SerializeField] TarodevController.PlayerAnimator RefToPlayerAnimator;
 
-        RefToHealthBar.SetMaxHealth(maxHealth);
-        RefToKnockbackCollider = attackPoint.GetComponent<CapsuleCollider2D>();
-        RefToKnockback = attackPoint.GetComponent<Knockback>();
-        if (RefToKnockback != null)
+        [SerializeField] GameObject LoseScreen;
+        
+
+
+        public bool mobcollided;
+        public bool HasDoneAnAttack;
+        public Animator anim;
+        CapsuleCollider2D attackPoint;
+
+        //public GameObject AttackPoint;
+
+
+
+        // Start is called before the first frame update
+        void Start()
         {
-            RefToKnockback.enabled = false;
-            RefToKnockbackCollider.enabled = false;
+            currentHealth = maxHealth;
+
+            RefToHealthBar.SetMaxHealth(maxHealth); // Reference To Health Bar UI
+            //attackPoint = AttackPoint.GetComponent<CapsuleCollider2D>();
+            //attackPoint.enabled = false;
+
+
+
+
         }
 
-
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Time.time >= nextAttackTime)
+        void OnCollisionEnter2D(Collision2D other)
         {
-
-            if (Input.GetButtonDown("BKick"))
+            if (HasDoneAnAttack)
             {
-                BabyKick();
-                nextAttackTime = Time.time + 1f / attackRate;
+                mobcollided = true;
+                
             }
-
-        }
-        if (currentHealth <= 0)
-        {
-            onDeath();
-        }
-
-
-    }
-    void BabyKick()
-    {
-        //Play Attack Animation
-        anim.SetTrigger("isBabyKicking");
-        // Detect enemies in range of attack
-        RefToKnockbackCollider.enabled = true;
-        RefToKnockback.enabled = true;
-        Collider2D[] EnemiesHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        // Damage them
-
-        foreach (Collider2D enemy in EnemiesHit)
-        {
-            enemy.GetComponent<SlimeMobScript>().TakeDamage(25);
-        }
-        StartCoroutine(ColliderTimer(RefToKnockback, RefToKnockbackCollider));
-    }
-    public void TakeDamage(int Damage)
-    {
-        currentHealth -= Damage;
-        RefToHealthBar.SetHealth(currentHealth);
-        RefToPlayerAnimator.HasBeenDamaged();
-
-    }
-    public void onDeath()
-    {
-        if (gameObject != null)
-        {
-            if (RefToDialogueManager.HasSentenceEnded == true)
+            if (!HasDoneAnAttack)
             {
-                RefToDialogueTrigger.TriggerDialogue();
-                RefToDialogueManager.HasSentenceEnded = false;
-                anim.SetTrigger("hasDied");
-                hasDied = true;
-                StartCoroutine(RestartScene());
+                mobcollided = false;
+                Vector2 knockbackDir = transform.position - other.transform.position;
 
-
+            // Apply knockback force
+            GetComponent<Rigidbody2D>().AddForce(knockbackDir.normalized * 145, ForceMode2D.Impulse);
             }
         }
 
 
-
-
-
-
-
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (attackPoint == null)
-            return;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-    IEnumerator ColliderTimer(Knockback RefToKnockback, CapsuleCollider2D RefToKnockbackCollider)
-    {                                                                                                                                                                                                                               
-        if (attackPoint != null)
+        // Update is called once per frame
+        void Update()
         {
-            yield return new WaitForSeconds(0.5f);
-            RefToKnockbackCollider.enabled = false;
-            RefToKnockback.enabled = false;
+
+            if (currentHealth <= 0)
+            {
+                onDeath();
+            }
+            if (transform.position.y <= -10.5f)
+            {
+                transform.position = new Vector2(transform.position.x, 55f);
+                if (this != null)
+                {
+                    TakeDamage(10);
+                }
+
+            }
+            else if (transform.position.y >= 56f)
+            {   
+                transform.position = new Vector2(transform.position.x, 56f);
+            }
+
+
         }
+        public async void BabyKick()
+        {
+            if (!HasDoneAnAttack)
+            {
+
+               // AttackPoint.SetActive(true);
+                // attackPoint.enabled = true;
+                HasDoneAnAttack = true;
+                await Task.Delay(750); // Wait for 1 second (1000 milliseconds)
+                HasDoneAnAttack = false; // Reset the flag
+                /*if (AttackPoint != null)
+                {
+                    //AttackPoint.SetActive(false);
+                    attackPoint.enabled = false;
+                }
+                */
+            }
+
+
+
+
+        }
+        public void TakeDamage(int Damage)
+        {
+            currentHealth -= Damage; //Decrement Health Function
+            if (RefToHealthBar != null)
+            {
+                RefToHealthBar.SetHealth(currentHealth); //Display UI
+            }
+
+            // RefToPlayerAnimator.HasBeenDamaged();
+
+        }
+        public void onDeath()
+        {
+            //Hidden Dialogue Manager script data disabled because no dialogue
+
+            /* if (gameObject != null)
+            {
+                 if (RefToDialogueManager.HasSentenceEnded == true)
+                {
+                    RefToDialogueTrigger.TriggerDialogue();
+                    RefToDialogueManager.HasSentenceEnded = false;
+                    anim.SetTrigger("hasDied");
+                    hasDied = true;
+                    StartCoroutine(RestartScene());
+
+
+                }
+            }
+            */
+            anim.Play("Death forward"); //Play death animation
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll; //Freeze RigidBody
+            StartCoroutine(LoseScreenCo()); //Start Lose Screen Coroutine
+
+
+
+
+
+
+
+
+
+        }
+
+        IEnumerator RestartScene()
+        {
+
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
+        IEnumerator LoseScreenCo()
+        {
+
+            yield return new WaitForSeconds(1.5f);
+            LoseScreen.SetActive(true);
+
+        }
+
+
+
     }
-    IEnumerator RestartScene()
-    {
-
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-    }
-
-
 
 }
 

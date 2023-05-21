@@ -8,6 +8,9 @@ TagManager:
   - Health Bar
   - Enemy
   - Jane
+  - Platform
+  - Point
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Platform
   - 
   - Ground
   - Enemy

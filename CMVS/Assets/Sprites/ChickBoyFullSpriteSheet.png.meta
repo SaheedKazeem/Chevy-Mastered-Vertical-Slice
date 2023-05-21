@@ -456,7 +456,7 @@ TextureImporter:
       213: 2156297445230409525
     second: ChickBoyFullSpriteSheet_150
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -476,6 +476,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -485,8 +487,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -507,10 +509,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -598,6 +604,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -3477,6 +3495,143 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ChickBoy Wall 3: -377662845392275410
+      ChickBoy Death Forward 2: 6262185829093890996
+      ChickBoy Run 2: 5791550519230962982
+      ChickBoy Double Jump 2: 778732462988165026
+      ChickBoy Crouch Idle 1: -4784854848308680748
+      ChickBoy Wall 2: 6583119134920129130
+      ChickBoy Idle 5: -8855323551687492269
+      ChickBoy Double Jump 19: -6963343430948026456
+      ChickBoy Dash 5: 3901541776805821596
+      ChickBoy Double Jump 3: -7042299830812814619
+      ChickBoy Double Jump 13: 7170435642782005190
+      ChickBoy Wall Ride 3: -8165136780412171007
+      ChickBoy Idle Bonus 8: -2817118492975853156
+      ChickBoy Slide 4: 3452148239390680849
+      ChickBoy Baby Kick 5: 1352699393720412463
+      ChickBoy Wall Ride 4: -2844294714808217775
+      ChickBoy Slide 1: 8465971748056277896
+      ChickBoy Thrust Kick 4: -4843096307370572936
+      ChickBoy Run 1: -2247561714499322294
+      ChickBoy Crouch Walk 6: -2959604214267640263
+      ChickBoy Crouch Idle 3: -1001579917279434031
+      ChickBoy Double Jump 12: 2115296583625093826
+      ChickBoy Run 6: -8490765903185031269
+      ChickBoy Crouch Walk 9: -2231736362945950861
+      ChickBoy Double Jump 7: -1201477696155648670
+      ChickBoy Run 8: -6900733792398388238
+      ChickBoy Idle Bonus 1: 7888152002763770494
+      ChickBoy Death Backward 6: -6686032349899589068
+      ChickBoy Run 3: -1603415058101049818
+      ChickBoy Crouch 4: 7843297012318880552
+      ChickBoy Jump 3: 5944917806604329991
+      ChickBoy Thrust Kick 1: -4462220470548792280
+      ChickBoy Idle 6: 4082900311815922269
+      ChickBoy Double Jump 11: -5691610576688052205
+      ChickBoy Idle Bonus 11: -412612792335196734
+      ChickBoy Damaged 2: -4984900489353410383
+      ChickBoy Double Jump 5: 7518545866265101406
+      ChickBoy Wall 5: -6071577575398523789
+      ChickBoy Death Forward 5: 7525745846661082851
+      ChickBoy Slam Kick 6: 4985107343502502446
+      ChickBoy Idle Bonus 4: 2237500013555142984
+      ChickBoy Idle Bonus 10: -3945265382641078826
+      ChickBoy Double Jump 10: -8101898947728951777
+      ChickBoy Dash 6: 2311985546767081756
+      ChickBoy Baby Kick 1: 9149137040981173852
+      ChickBoy Run 4: -493282257338878791
+      ChickBoy Slide 3: 5414152547679397508
+      ChickBoy Dash 4: -7832291587335361855
+      ChickBoy Dash 1: 2406684658584059724
+      ChickBoy Run 9: 5582182539860919268
+      ChickBoy Crouch Idle 4: -740626098869037733
+      ChickBoy Death Forward 3: 2146170535789173901
+      ChickBoy Jump 9: -3155725994358814502
+      ChickBoy Baby Kick 2: 8651074775526623121
+      ChickBoy Crouch Walk 1: -5601392293615025000
+      ChickBoy Jump 8: -3053312331544396331
+      ChickBoy Run 7: 4655637094759326558
+      ChickBoy Jump 4: 905865011836557052
+      ChickBoy Thrust Kick 3: 4855341662682447991
+      ChickBoy Death Forward 9: 3372220880391488374
+      ChickBoy Slam Kick 7: 1366664887047758228
+      ChickBoy Thrust Kick 6: -8027206627223693932
+      ChickBoy Idle Bonus 9: -508603583702034595
+      ChickBoy Double Jump 9: -6251617829010730079
+      ChickBoy Slam Kick 5: -142438985243454097
+      ChickBoy Double Jump 18: -6655363853477102122
+      ChickBoy Wall Ride 1: 2122350710924938040
+      ChickBoy Dash 3: 7947271572394563959
+      ChickBoy Jump 6: 6515253203621922024
+      ChickBoy Jump 2: -3535071015908917493
+      ChickBoy Dash 2: -8612487294987128522
+      ChickBoy Crouch Walk 7: 4151273956472879232
+      ChickBoy Idle 3: -8513976251330088944
+      ChickBoy Run 5: -8196598131050253366
+      ChickBoy Damaged 3: -8886980289093873398
+      ChickBoy Dash 7: 678786659195483484
+      ChickBoy Death Backward 8: 6062752191627783412
+      ChickBoy Damaged 1: -928235231756074148
+      ChickBoy Death Forward 8: 8225067162850329062
+      ChickBoy Crouch Walk 4: 6704150192173684435
+      ChickBoy Damaged 4: -6709766423306080784
+      ChickBoy Double Jump 4: -7297438093165534743
+      ChickBoy Crouch Walk 2: -5658580210938483927
+      ChickBoy Jump 11: 6688989825627139806
+      ChickBoy Idle 2: 8425498725096943901
+      ChickBoy Idle Bonus 2: 6476818145782880507
+      ChickBoy Baby Kick 4: -6725746845970659803
+      ChickBoy Death Forward 1: 6737200041890719660
+      ChickBoy Double Jump 1: -3283500056156430431
+      ChickBoy Idle Bonus 3: 5489226840752642345
+      ChickBoy Slam Kick 3: 6785314000579043458
+      ChickBoy Double Jump 14: -937434936530236158
+      ChickBoy Wall 6: -2502795748350986837
+      ChickBoy Jump 7: 3967176252985239449
+      ChickBoy Crouch Walk 3: 7248506680112795226
+      ChickBoy Death Backward 7: -4032003400026757955
+      ChickBoy Slam Kick 4: 148182663568324165
+      ChickBoy Death Forward 4: 9030117646788638729
+      ChickBoy Idle Bonus 5: 147345274226181681
+      ChickBoy Crouch Walk 10: -497512502595343095
+      ChickBoy Crouch 2: 7925114979603424853
+      ChickBoy Crouch 3: 5352636888309911843
+      ChickBoy Slide 2: -7916444257822417429
+      ChickBoy Death Forward 6: 135572756279252810
+      ChickBoy Death Forward 7: -2456577563355313775
+      ChickBoy Thrust Kick 5: 6427100753194451553
+      ChickBoy Double Jump 16: 8687224915344190054
+      ChickBoy Run 10: -4611484880911008363
+      ChickBoy Crouch Walk 5: 4023225179662086147
+      ChickBoy Death Backward 2: 6769495434242400610
+      ChickBoy Jump 12: 3186769715817043349
+      ChickBoy Jump 5: 4864761395717202153
+      ChickBoy Idle 4: -9108352490896984989
+      ChickBoy Death Backward 5: 7036981191776254586
+      ChickBoy Wall 1: -895852125826748404
+      ChickBoy Idle Bonus 6: -735350551438417541
+      ChickBoy Crouch Walk 8: 6732906687339230506
+      ChickBoy Thrust Kick 2: -130100253892602703
+      ChickBoy Double Jump 6: 3530077635176011411
+      ChickBoy Jump 10: 4277103654294435150
+      ChickBoy Slam Kick 2: 2439707037547514053
+      ChickBoy Idle 1: -8110354235575882292
+      ChickBoy Jump 1: 1308783383178411035
+      ChickBoy Wall Ride 2: -5810971584154183247
+      ChickBoy Death Backward 4: 4125901478872946719
+      ChickBoy Wall 4: -6754753044617681819
+      ChickBoy Slam Kick 1: 6368106575376171647
+      ChickBoy Idle Bonus 7: -8463571782790766239
+      ChickBoy Baby Kick 3: 6625286484094428441
+      ChickBoy Double Jump 17: -8873374604656834622
+      ChickBoy Death Backward 3: 1965280060467401935
+      ChickBoy Crouch Idle 2: 8036040861703421131
+      ChickBoy Death Backward 1: 2902272199484154968
+      ChickBoy Double Jump 8: -9153240565750242406
+      ChickBoy Double Jump 15: -5622529381735996374
+      ChickBoy Crouch 1: 8805245782371018637
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
