@@ -20,6 +20,7 @@ namespace PlayerControllers
         [SerializeField] TarodevController.PlayerAnimator RefToPlayerAnimator;
 
         [SerializeField] GameObject LoseScreen;
+        
 
 
         public bool mobcollided;

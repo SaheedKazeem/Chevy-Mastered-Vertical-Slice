@@ -49674,11 +49674,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6377626921821750012, guid: cb3454a555cb4724281b1621a6e61582,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.4356933
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377626921821750012, guid: cb3454a555cb4724281b1621a6e61582,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.198184
       objectReference: {fileID: 0}
@@ -49731,9 +49726,8 @@ PrefabInstance:
         type: 3}
       propertyPath: RefToPlayer
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7206192764656351964, guid: cb3454a555cb4724281b1621a6e61582, type: 3}
+      objectReference: {fileID: 652125124}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3454a555cb4724281b1621a6e61582, type: 3}
 --- !u!1 &1651085948 stripped
 GameObject:
@@ -50220,6 +50214,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1835027819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6377626921821750003, guid: cb3454a555cb4724281b1621a6e61582,
+    type: 3}
+  m_PrefabInstance: {fileID: 1620702706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835027820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7153551248344250375, guid: cb3454a555cb4724281b1621a6e61582,
+    type: 3}
+  m_PrefabInstance: {fileID: 1620702706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835027819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b024bb88e58426b45acb6fc4ba655e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1835027825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835027819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d00f4b4b3292419567f728d0e17c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefToDialogueBox: {fileID: 1651085948}
+  RefToDialogueTrigger: {fileID: 1835027820}
 --- !u!4 &1877574503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7840549269417328671, guid: a937502f2bfdb11428fc6c30be6b7363,
